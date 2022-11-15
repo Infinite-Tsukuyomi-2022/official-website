@@ -1,0 +1,14 @@
+:root {
+  --main-gradient: linear-gradient(277.58deg, #2AF7FD 10.91%, #D99DF5 91.75%);
+  --button-gradient: linear-gradient(274.81deg, rgba(42, 247, 253, 0.2) 6.84%, rgba(217, 157, 245, 0.2) 95.09%);
+  --main-purple: #D99DF5;
+  --tab-height: 61px;
+  --font-size-big: 28px;
+  --font-size-normal: 20px;
+  --font-size-small: 18px;
+  --font-size-tiny: 13px;
+}
+
+body {
+  cursor: url('./assets/cursor.svg') 25 15, auto;
+}

@@ -1,0 +1,306 @@
+.titleContainer {
+  background: var(--main-gradient);
+}
+
+.headerTitle {
+  position: fixed;
+  z-index: 100;
+  top: 35px;
+  left: 30px;
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: var(--main-gradient) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.gradient_box {
+  height: calc(100vh - 40px);
+  min-height: -webkit-fill-available;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  padding-top: 73px;
+  box-sizing: border-box;
+  $border: 5px;
+  color: #fff;
+  background: #000;
+  background-size: 32px 32px;
+  // https://stackoverflow.com/a/32861765/4622645
+  background-image: radial-gradient(circle, #434343 1px, rgba(0, 0, 0, 0) 1px);
+  border-image: var(--main-gradient) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.mainContent {
+  height: calc(100vh - 177px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.topContainer {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+
+  @media only screen and (max-device-width: 480px) {
+    gap: 30px;
+  }
+}
+
+.logo {
+  width: 70vh;
+
+  @media only screen and (max-device-width: 480px) {
+    width: 90%;
+  }
+}
+
+.intro_card_container {
+  flex: 1;
+  height: 250px;
+  border-image: var(--main-gradient) 30;
+  border-width: 2px;
+  border-style: solid;
+
+  @media only screen and (max-device-width: 480px) {
+    width: 100%;
+  }
+
+  @media only screen and (min-device-width: 480px) {
+    max-width: 50%;
+  }
+}
+
+.intro_card_title {
+  padding-left: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+  background: var(--main-gradient);
+}
+
+.intro_card_desc {
+  padding: 20px 20px;
+  font-size: var(--font-size-normal);
+  color: #ee9df5;
+  position: relative;
+  height: calc(100% - 75px);
+  overflow-y: scroll;
+}
+
+.marquee_container {
+  position: fixed;
+  z-index: 100;
+  bottom: 35px;
+  left: 30px;
+  width: calc(100% - 60px);
+  border: 1px solid #ee9df5;
+  color: #ee9df5;
+  display: flex;
+  height: 30px;
+  background-color: #000;
+
+  div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  div:nth-child(3) {
+    flex: 5;
+  }
+}
+
+.service_container {
+  position: relative;
+  min-height: 80vh;
+  box-sizing: border-box;
+
+  div:first-child {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    margin-top: 100px;
+  }
+
+  @media only screen and (min-device-width: 480px) {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+}
+
+.service_title {
+  color: white;
+  font-size: var(--font-size-big);
+  font-weight: bold;
+}
+
+.service_card_container {
+  width: 99%;
+  margin-top: 20px;
+  border-image: var(--main-gradient) 30;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.service_card_title {
+  display: flex;
+  font-weight: bold;
+  color: white;
+
+  div {
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(277.37deg, #00797c -15.34%, #873da9 101.79%);
+    font-size: var(--font-size-normal);
+    padding: 20px 5px;
+    height: var(--tab-height);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+
+    @media only screen and (max-device-width: 480px) {
+      font-size: var(--font-size-tiny);
+    }
+  }
+}
+
+.service_card_desc {
+  color: #ee9df5;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  height: calc(100% - var(--tab-height));
+  background: linear-gradient(180deg, rgba(238, 157, 245, 0) 9.13%, rgba(238, 157, 245, 0.2) 98.88%);
+
+  img {
+    width: 136px;
+    padding: 5px;
+    padding-top: 20px;
+  }
+}
+
+.strategy_container {
+  margin-top: 200px;
+  position: relative;
+  min-height: 80vh;
+  box-sizing: border-box;
+
+  div:first-child {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-device-width: 775px) {
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-device-width: 775px) {
+    margin-top: 100px;
+    min-height: 100vh;
+  }
+
+  @media only screen and (min-device-width: 775px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.strategy_title {
+  color: white;
+  font-size: var(--font-size-big);
+  font-weight: bold;
+}
+
+.strategy_card_container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: calc(100% - var(--tab-height));
+
+  img {
+    width: 250px;
+    height: 250px;
+    padding: 30px 37.5px;
+    padding-top: 20px;
+  }
+}
+
+.team_container {
+  margin-top: 200px;
+  position: relative;
+  min-height: 80vh;
+  box-sizing: border-box;
+
+  div:first-child {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-device-width: 775px) {
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-device-width: 775px) {
+    margin-top: 100px;
+    min-height: 100vh;
+  }
+
+  @media only screen and (min-device-width: 775px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.team_title {
+  color: white;
+  font-size: var(--font-size-big);
+  font-weight: bold;
+}
+
+.team_card_container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: calc(100% - var(--tab-height));
+
+  img {
+    width: 300px;
+    height: 300px;
+    padding: 30px 37.5px;
+    padding-top: 20px;
+  }
+}
+
+.bottomBanner {
+  // width: 70vw;
+}
+
+.bottomBannerMobile {
+  text-align: center;
+  img {
+    width: 75vw;
+  }
+}

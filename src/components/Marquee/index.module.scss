@@ -1,0 +1,29 @@
+.marquee {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background: black;
+  color: #EE9DF5;
+  overflow: hidden;
+}
+
+.marquee div {
+  // position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  //transform: translateX(100%);
+  // animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

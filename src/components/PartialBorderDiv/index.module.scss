@@ -1,0 +1,11 @@
+.pseudo_partial_border {
+  width: 217px;
+  margin: 25px auto;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  background:
+   linear-gradient(rgba(217, 157, 243, 1), rgba(217, 157, 243, 1)) 50% 50%/calc(100% - 20px) calc(100% - 0px) no-repeat, 
+   linear-gradient(rgba(217, 157, 243, 1), rgba(217, 157, 243, 1)) 50% 50%/calc(100% - 10px) calc(100% - 10px) no-repeat, 
+   linear-gradient(90deg, #EE9DF5 5%, transparent 5%, transparent 95%, #EE9DF5 5%);
+}
