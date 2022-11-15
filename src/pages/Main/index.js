@@ -10,13 +10,8 @@ import service02 from "../../assets/service02.svg";
 import service03 from "../../assets/service03.svg";
 import service04 from "../../assets/service04.svg";
 
-import strategy01 from "../../assets/strategy01.svg";
 import strategy02 from "../../assets/strategy02.svg";
-import strategy03 from "../../assets/strategy03.svg";
-import strategy04 from "../../assets/strategy04.svg";
-import strategy05 from "../../assets/strategy05.svg";
 import strategy06 from "../../assets/strategy06.svg";
-import strategy07 from "../../assets/strategy07.svg";
 import strategy08 from "../../assets/strategy08.svg";
 
 import team01 from "../../assets/team01.svg";
@@ -43,7 +38,7 @@ const Main = () => {
               right: "10px",
               fontSize: "20px",
             }}
-            btnText="通往 web 3.0"
+            btnText="通往 WEB 3.0"
           />
           <div className={styles.topContainer}>
             <img className={styles.logo} src={logo} alt="Logo" />
@@ -69,7 +64,7 @@ const Main = () => {
                   width: "165px",
                   top: 0,
                 }}
-                btnText="medium 看完整內容"
+                btnText="MEDIUM 看完整內容"
               />
             </div>
             <div className={styles.service_card_container}>
@@ -93,13 +88,8 @@ const Main = () => {
               <div></div>
             </div>
             <div className={styles.strategy_card_container}>
-              <img src={strategy01} alt="strategy01" />
               <img src={strategy02} alt="strategy02" />
-              <img src={strategy03} alt="strategy03" />
-              <img src={strategy04} alt="strategy04" />
-              <img src={strategy05} alt="strategy05" />
               <img src={strategy06} alt="strategy06" />
-              <img src={strategy07} alt="strategy07" />
               <img src={strategy08} alt="strategy08" />
             </div>
           </div>
